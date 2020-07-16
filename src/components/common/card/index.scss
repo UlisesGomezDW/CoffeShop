@@ -1,0 +1,27 @@
+@import './../../../variables.scss';
+.card{
+    width: 15vw;
+    box-shadow: 0 3px 6px 0 #ccc;
+    border-radius: 20px;
+    margin-left: 2vw;
+}
+.card-img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-body{
+    width: 100%;
+    padding-bottom: 1vh;
+    .product{
+        margin-top: 0.5vh;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .description{
+        margin-top: 0.5vh;
+    }
+}
+.card:hover{
+    background-color: $neutral;
+}

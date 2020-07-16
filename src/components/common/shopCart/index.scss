@@ -1,0 +1,39 @@
+.count-form{
+    border-radius: 50%;
+    background-color: #ff4d4f;
+    width: 55%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 23%;
+    left: 30%;
+    span{
+        color: #fff;
+        font-weight: 600;
+    }
+}
+.cart-container{
+    background-image: url('https://image.flaticon.com/icons/svg/1170/1170678.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 3vw;
+}
+
+@media screen and (max-width: 768px){
+    .cart-container{
+        width: 8vw;
+        height: 8vw;
+    }
+    .count-form{
+        width: 60%;
+        height: 60%;
+        top: 20%;
+        left: 30%;
+    }
+}
