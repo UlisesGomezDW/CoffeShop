@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+.section-category{
+    color: #fff;
+    width: 20vw;
+    height: 30vh;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 60%;
+    }
+    p{
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 3vh;
+    }
+    span{
+        font-size: 2vh;
+    }
+    &:nth-child(1){
+        background-color: $secondary;
+    }
+    &:nth-child(2){
+        background-color: $yellow;
+    }
+    &:nth-child(4){
+        background-color: $neutral;
+    }
+    &:nth-child(3){
+        background-color: $blue;
+    }
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.category-gral{
+    width: 100vw;
+    margin: 2vh 0 2vh 0;
+    .p-tittle{
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 768px){
+    .category{
+        justify-content: center;
+    }
+}

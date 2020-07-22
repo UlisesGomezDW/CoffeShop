@@ -1,57 +1,40 @@
 @import './../../../variables.scss';
-.btn-primary{
+.btn-form{
     text-transform: uppercase;
-    color: #fff;
     font-weight: 600;
     background-color: $primary;
     border: none;
-    border-radius: 10px;
-    font-size: 1.6em;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin-top: 1vh;
     padding: 5px 0;
     letter-spacing: 1px;
-    width: 10vw;
+    width: 25vw;
     &:focus{
         outline-color: transparent;
         outline-style: none;
     }
+}
+.btn-primary{
+    color: #fff;
+    background-color: $primary;
 }
 .btn-secondary{
-    text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
     background-color: $secondary;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.6em;
-    padding: 5px 0;
-    letter-spacing: 1px;
-    width: 10vw;
-    &:focus{
-        outline-color: transparent;
-        outline-style: none;
-    }
 }
 .link-secondary{
-    text-transform: uppercase;
     color: $secondary;
-    font-weight: 600;
     background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.6em;
-    padding: 5px 0;
-    letter-spacing: 1px;
-    width: 10vw;
 }
 .link-primary{
-    text-transform: uppercase;
     color: $primary;
-    font-weight: 600;
     background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.6em;
-    padding: 5px 0;
-    letter-spacing: 1px;
-    width: 10vw;
+}
+
+@media screen and (max-width: 768px){
+    .btn-form{
+        width: 40vw;
+        font-size: 1.2em;
+    }
 }

@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import './index.scss'
 import ShopCart from '../common/shopCart'
 import SideBar from './menu'
-const Navbar = () =>{
+const Navbar = () => {
     const [active, setActive] = useState(null)
     const history = useHistory()
     const onActive = () =>{
@@ -22,9 +22,9 @@ const Navbar = () =>{
             <img src="https://image.flaticon.com/icons/svg/87/87390.svg" alt="Instagram"/>
             <img src="https://image.flaticon.com/icons/svg/733/733635.svg" alt="Twiter"/>
         </div>
-        <p className="tag-link" onClick={()=>history.push('/')}>Nosotros</p>
+        <p className="tag-link" onClick={()=>history.push('/about/')}>Nosotros</p>
         <p onClick={()=>history.push('/')}>coffee</p>
-        <p className="tag-link" onClick={()=>history.push('/')}>Contacto</p>
+        <p className="tag-link" onClick={()=>history.push('/contact/')}>Contacto</p>
         <ShopCart count={0} />
     </nav>
     )

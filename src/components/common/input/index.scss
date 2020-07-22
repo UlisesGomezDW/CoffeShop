@@ -1,0 +1,20 @@
+@import './../../../variables.scss';
+.input-form{
+    border: none;
+    font-size: 1.6em;
+    width: 30vw;
+    margin-bottom: 1vh;
+    color: #000;
+    border-bottom: 2px solid $secondary;
+    text-align: center;
+    &:focus{
+        outline-color: transparent;
+        outline-style: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .input-form{
+        width: 60vw;
+        font-size: 1.6em;
+    }
+}
