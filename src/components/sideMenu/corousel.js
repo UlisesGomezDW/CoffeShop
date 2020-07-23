@@ -1,13 +1,13 @@
 import React from 'react'
 import { Carousel } from 'antd'
 import './index.scss'
-import Consult from './data.json'
+const listText = ['Cafetería 100% online', 'Compras seguras', 'Servicio a domicilio', 'Servimos el mejor café de México']
 const Slide = () =>{
     return(
         <Carousel autoplay>
-        {Consult.map((data, id)=>(
-            <div key={id} style={{background: "#000"}}>
-                <h3>{data.text}</h3>
+        {listText.map((data, id)=>(
+            <div key={id}>
+                <h3>{data}</h3>
             </div>
         ))}
         </Carousel>

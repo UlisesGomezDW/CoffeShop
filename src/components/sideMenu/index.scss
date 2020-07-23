@@ -6,8 +6,22 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('https://images.pexels.com/photos/2068296/pexels-photo-2068296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  }
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    &:nth-child(4){
+      background-image: url('https://images.pexels.com/photos/1456926/pexels-photo-1456926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+    &:nth-child(3){
+      background-image: url('https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+    &:nth-child(2){
+      background-image: url('https://images.pexels.com/photos/2068296/pexels-photo-2068296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+    &:nth-child(5){
+      background-image: url('https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    }
+
+}
 
 .ant-carousel .slick-slide h3 {
     color: #fff;

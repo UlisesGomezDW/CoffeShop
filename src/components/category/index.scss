@@ -10,7 +10,7 @@
     justify-content: center;
     flex-direction: column;
     img{
-        width: 60%;
+        width: 50%;
     }
     p{
         margin-bottom: 0;
@@ -48,6 +48,16 @@
 }
 @media screen and (max-width: 768px){
     .category{
-        justify-content: center;
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .section-category{
+        width: 40vw;
+        height: 25vh;
+        margin: 1vh;
+        img{
+            width: 60%;
+        }
     }
 }
