@@ -79,6 +79,10 @@
     align-items: center;
     justify-content: center;
 }
+.layout-section{
+    height: 50vh;
+    background-color: red;
+}
 
 @media screen and (max-width: 768px){
     .layout-login{
