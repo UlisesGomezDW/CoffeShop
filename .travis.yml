@@ -14,7 +14,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   token:
-    secure: $FIREBASE_CI_TOKEN
+    secure: "ZzqwMiRQ0S6gFoW9Ff99Hlk031H36H+jIr8QQpBn7qD/ozEkuGfNsScjW+d234N3YWnxHdoSfiv/vbU8AmsKSXz820DAY0QvOWPTRTykpNfU6SYtJ2SLuiCxZ1ytY3X6VP7SaY3fd1w0gqjeR14TI8aWqAEC2dPH03JODCODujiOA1lOvfI6W3K4+6rmX6k5N8ENaHJdCojzEPUeYxBWwz0I+XAoU+ooXa+seAHPK37oRcFfo3+uLhwMcYzwffX7cTPC0fvnHFblNQtOUzNOjWYEvIWCthBqhhBfH2VHUnXYcbNTPKNXWf6yGZoHpZ0DZSV7F6Qn/3dXeEc3y2Ll69NjsN7/fV2QcJP7dBXNEHSSCdZsTdK7D2/Y6wMsXOc6nBqyuc0UhwfDICQU+LYRzdtzFic60qDzEQ+63841Bu/H3HhmmBuvZL0cGdVHjJwXgVWg6Z7xOYlJVJjVSsONPWX4rmZyals9HvbgOrH+s8Q+RUqx8fI0O3KS7XJEhtQY9oqjPmGWhum6jJXg1i6pXAdKPTv3rvrn8FZ7tYFnyDVSh+ldVVjenYujASqrLSlaBKZYJM6A/4ZUUpbZ/6tHg2Wgrg6PU+yoLJFu2BSi3u9CVRL9OY52NJPGVwHeNbJH4McWWYfpHR1HGkwwHlqLNeBaJfU+dR9WfS+suNFe7pk="
   github-token: $GITHUB_TOKEN
   project: ./build/
   commit_message: "Deploy release ${TRAVIS_TAG}"
