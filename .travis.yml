@@ -1,15 +1,16 @@
 language: node_js
 node_js:
-  - "stable"
-cache:
-  directories:
-    - node_modules
+  - "node"
+warnings_are_errors: false
+install:
+  - npm install
 script:
   - npm run build
 deploy:
-  provider: pages
+  provider: firebase
   skip-cleanup: true
   keep-history: true
+  token: $FIREBASE_TOKEN
   github-token: $GITHUB_TOKEN
   project: ./build/
   commit_message: "Deploy release ${TRAVIS_TAG}"
