@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "node"
 warnings_are_errors: false
+cache:
+  directories:
+    - node_modules
 install:
   - npm install
 script:
@@ -10,7 +13,8 @@ deploy:
   provider: firebase
   skip-cleanup: true
   keep-history: true
-  token: $FIREBASE_TOKEN
+  token:
+    secure: $FIREBASE_TOKEN
   github-token: $GITHUB_TOKEN
   project: ./build/
   commit_message: "Deploy release ${TRAVIS_TAG}"
