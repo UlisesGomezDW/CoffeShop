@@ -14,7 +14,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   token:
-    secure: $FIREBASE_TOKEN
+    secure: $FIREBASE_CI_TOKEN
   github-token: $GITHUB_TOKEN
   project: ./build/
   commit_message: "Deploy release ${TRAVIS_TAG}"
