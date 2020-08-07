@@ -12,10 +12,8 @@ script:
 deploy:
   provider: firebase
   skip-cleanup: true
-  keep-history: true
   token:
     secure: "sCq1p9miqx7QJI9xO9oy3YFWugVOvp1cCOFxCW3MtUtTJ4Y/9U8BofvCO+HNnLz7c2dIpQMGgg53/9L8Oot1C829zXTaD2rSj4NKu8blS5O6QmE5ApytudJb5he8ndJa2704l/CzleJPyamfEOIQlqiIdpTGzbVL1S6EDRjNCaF+Dw7xXRW5ca4TjXXmjrr1iBIm0bFnEDPru7OIp/Vb+opQO6Ni7DnjODZXVX13bUy6VDo8uc5U9SJ0bbRdqTWErwjS9mLm8eUc7c0LAzVDGE+03nYT/8wrBlu+T3MHAl5WKntlHh8sVK05FRcQBORwhafp1MtykS77suiwho9qfysrDuxhT4XK/ltO6IyAm/HqOsXEgYqwS6fV3Z25Wno3he7J/iGVQf9e9j+HukvzX3+NivwpGJhVGy29r2lg09AmnZO+AbvVw+aJL3e2zJ+A74tDxL3mdBbSsSKfeoWCJkntGZYhnbf0iB0yKsw5F4bzbachzIaOnm3S299Srnc4Bk0Cz2eItNGt2hwngcBKUP2F/HPhGnKPL/l34Bds7M9oyvNLPQwY7gAm9sznTiHo0v+zafD4KMbfz0TKQr2mHOjVKw84mFAC/Jk0ln8gNdIj+o+N1XkQtVUm7Leov7smPQvy4AQtFYlZDwbA3O2yhLWyjtB6U36ApQVIKMFl17Y="
-  project: ./build/
   commit_message: "Deploy release ${TRAVIS_TAG}"
 on:
   branch: master
